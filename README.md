@@ -43,8 +43,3 @@ A responsive and interactive To-Do List web app built using **HTML**, **CSS**, a
 3. Use **Live Server** extension or open `index.html` directly in your browser.
 
 
-## 📌 Future Improvements
-
-* [ ] Add sub-tasks and notes
-* [ ] Filter/sort by priority or deadline
-* [ ] Theme toggle
