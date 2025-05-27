@@ -1,0 +1,172 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+#dateTime {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-group input[type="date"],
+.input-group input[type="text"],
+.input-group select {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.7rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s;
+}
+
+li .task-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li.completed {
+  background: #f0f0f0;
+}
+
+li span {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.remove-btn,
+.edit-btn {
+  background: transparent;
+  border: none;
+  color: crimson;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.task-meta {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.reminder {
+  color: #e63946;
+  font-weight: 600;
+}
+
+#emptyMessage {
+  text-align: center;
+  color: #28a745;
+  font-weight: 500;
+  display: none;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .task-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  .task-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

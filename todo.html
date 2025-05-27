@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="todo1.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 My To-Do List</h1>
+      <p id="dateTime"></p>
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="What do you want to do today?" />
+      <input type="date" id="deadlineInput" />
+      <select id="priorityInput">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="addBtn">➕ Add</button>
+    </div>
+
+    <div class="filter-group">
+      <label for="sortFilter">Sort by:</label>
+      <select id="sortFilter">
+        <option value="created">Created Date</option>
+        <option value="deadline">Deadline</option>
+        <option value="priority">Priority</option>
+      </select>
+    </div>
+
+    <div class="task-info">
+      <p>Total: <span id="totalCount">0</span></p>
+      <p>Completed: <span id="completedCount">0</span></p>
+      <p>Remaining: <span id="remainingCount">0</span></p>
+    </div>
+
+    <ul id="taskList"></ul>
+    <p id="emptyMessage">✅ You're all caught up!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
