@@ -11,7 +11,7 @@ A responsive and interactive To-Do List web app built using **HTML**, **CSS**, a
 
 ---
 
-## 🚀 Features
+##  Features
 
 * **Live Time Display:** Shows the current date and time.
 * **Task Deadlines:** Set a deadline for each task.
@@ -24,10 +24,10 @@ A responsive and interactive To-Do List web app built using **HTML**, **CSS**, a
 
 ---
 
-## 📂 File Structure
+##  File Structure
 
 ```
-📁 ToDoApp
+ ToDoApp
 ├── index.html        
 ├── todo1.css         
 ├── script.js         
@@ -36,13 +36,12 @@ A responsive and interactive To-Do List web app built using **HTML**, **CSS**, a
 
 ---
 
-## 🛠️ How to Run
+##  How to Run
 
 1. **Clone the repo** or download the files.
 2. Open the folder in **VS Code** or any text editor.
 3. Use **Live Server** extension or open `index.html` directly in your browser.
 
----
 
 ## 📌 Future Improvements
 
